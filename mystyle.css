@@ -1,0 +1,99 @@
+*{margin:0px;
+padding:0px;
+}
+.container{
+    width:100%;
+    min-height:100vh;
+    background: linear-gradient(135deg, #153677 ,#4e085f);
+    padding: 10px;
+}
+.todo-app{
+    background:#fff;
+    min-height:120px;
+    width:500px;
+    margin:150px auto ;
+    padding:20px 20px 20px 20px;
+    border-radius:15px;
+
+}
+.todo-app h1{
+    color:#002765;
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+.todo-app h1 img{
+    width:35px;
+    margin-left: 5px;
+}
+.row{
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    padding:5px;
+    font-size:15px;
+}
+button{
+    border:none;
+    outline:none;
+    padding:16px 50px;
+    background:#ff5945;
+    color:#fff;
+    font-size:15px;
+    cursor:pointer;
+    border-radius: 25px;
+}
+ul li{
+    list-style:none;
+    font-size: 17px;
+    padding:12px 12px 12px 32px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image:url(images/untick.png);
+    background-size:cover;
+    background-position:center;
+    top:8px;
+    left:0px;
+}
+.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url(images/tick.jpeg);
+}
+ul li span{
+    position:absolute;
+    right:0px;
+    top:5px;
+    font-size:22px;
+    width:30px ;
+    height:30px ;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    padding:0px 5px 10px 5px;
+    border-radius: 50;
+}
+ul li span:hover{
+    background:#edeef0;
+}
