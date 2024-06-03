@@ -1,2 +1,2 @@
 # To-Do-list
-<img src="/.jpeg" alt="logo">
+<img src="./App-look.png" alt="logo">
